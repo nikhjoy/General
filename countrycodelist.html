@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
 <select id="txtCountryCode" name="txtCountryCode" required>
 <option name=""value="">Select Country</option>
 <option name="United Arab Emirates" value="+971">United Arab Emirates (+971)</option>
@@ -216,17 +223,19 @@
 <option name="Zambia" value="+260">Zambia (+260)</option>
 <option name="Zimbabwe" value="+263">Zimbabwe (+263)</option>
 </select>
-					<div class="row">
-						<div class="col-sm-4">
-							<input type="text" id="code" name="code" Placeholder="Code" required readonly>
-						</div>
-						<div class="col-sm-8">
-    						<input type="text" id="txtMobile" name="txtMobile" Placeholder="Mobile No" required>
-    					</div>
-    				</div>				
-    					<input type="text" name="txtCountry" id="txtCountry" placeholder="Country">
-                        <div><input type="submit" name="txtSubmit" class="submit" value="Register Now" id="txtSubmit"></div>
-    				</form>		
+
+<div class="row">
+	<div class="col-sm-4">
+		<input type="text" id="code" name="code" Placeholder="Code" required readonly>
+	</div>
+	<div class="col-sm-8">
+    		<input type="text" id="txtMobile" name="txtMobile" Placeholder="Mobile No" required>
+    	</div>
+</div>				
+<input type="text" name="txtCountry" id="txtCountry" placeholder="Country">
+<div><input type="submit" name="txtSubmit" class="submit" value="Register Now" id="txtSubmit"></div>
+</form>
+
 <script>
 $(function() {
     $('#txtCountryCode').on('change', function() {
@@ -235,3 +244,6 @@ $(function() {
     });
 });
 </script>
+	
+	</body>
+</html>
